@@ -156,7 +156,6 @@ MonoBehaviour:
   finishGround: {fileID: 1832296064}
   flyAnim: {fileID: 505532318}
   spawnTime: 1.7
-  lastSpikeGround: 0
 --- !u!4 &14008806
 Transform:
   m_ObjectHideFlags: 0
@@ -316,7 +315,7 @@ SpriteRenderer:
   m_Size: {x: 0.59, y: 0.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &205725996
@@ -425,7 +424,7 @@ SpriteRenderer:
   m_Size: {x: 4.21, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &218171229
@@ -800,7 +799,7 @@ SpriteRenderer:
   m_Size: {x: 0.92, y: 0.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &505532320
@@ -828,8 +827,8 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -864,6 +863,7 @@ MonoBehaviour:
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
+    serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 0
@@ -1181,7 +1181,7 @@ SpriteRenderer:
   m_Size: {x: 0.67, y: 0.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &933675813
@@ -1274,7 +1274,7 @@ SpriteRenderer:
   m_Size: {x: 0.87, y: 0.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &933675816
@@ -1355,10 +1355,6 @@ MonoBehaviour:
   isDie: 0
   dieAu: {fileID: 933675820}
   getPoint: {fileID: 933675821}
-  playerRig: {fileID: 0}
-  playerSp: {fileID: 0}
-  playerAnim: {fileID: 0}
-  playerVelocity: {x: 0, y: 0}
 --- !u!82 &933675820
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1616,7 +1612,7 @@ SpriteRenderer:
   m_Size: {x: 0.92, y: 0.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1043093501
@@ -1699,7 +1695,7 @@ SpriteRenderer:
   m_Size: {x: 0.59, y: 0.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1101772266
@@ -1815,9 +1811,6 @@ MonoBehaviour:
   - thank you so much
   - you have arrived here
   - that's all and congratulations!.
-  test: 0
-  textCount: 0
-  changeColor: 0
 --- !u!4 &1207174868
 Transform:
   m_ObjectHideFlags: 0
@@ -2038,7 +2031,7 @@ SpriteRenderer:
   m_Size: {x: 0.5, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1431271074
@@ -2120,7 +2113,7 @@ SpriteRenderer:
   m_Size: {x: 1.5, y: 1.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1505800557
@@ -2201,159 +2194,12 @@ RectTransform:
   m_AnchoredPosition: {x: -55, y: -80}
   m_SizeDelta: {x: 60, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1546639466
+--- !u!4 &1546639466 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 3634722495015135034, guid: 4784249003ef3c3438d002d3baa00944,
     type: 3}
   m_PrefabInstance: {fileID: 456296042}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700093326}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7800002, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_Children: []
-  m_Father: {fileID: 14008806}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1700093326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3634722495015135015, guid: 4784249003ef3c3438d002d3baa00944,
-    type: 3}
-  m_PrefabInstance: {fileID: 456296042}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1546639466}
-  - component: {fileID: 1700093330}
-  - component: {fileID: 1700093329}
-  - component: {fileID: 1700093328}
-  - component: {fileID: 1700093327}
-  m_Layer: 0
-  m_Name: Ground
-  m_TagString: Ground
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1700093327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3634722495015135035, guid: 4784249003ef3c3438d002d3baa00944,
-    type: 3}
-  m_PrefabInstance: {fileID: 456296042}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700093326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1853eada3a9e38a4683905c31c593a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 2
-  groundRig: {fileID: 0}
-  playerIn: 0
---- !u!50 &1700093328
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3634722495015135032, guid: 4784249003ef3c3438d002d3baa00944,
-    type: 3}
-  m_PrefabInstance: {fileID: 456296042}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700093326}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1700093329
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3634722495015135012, guid: 4784249003ef3c3438d002d3baa00944,
-    type: 3}
-  m_PrefabInstance: {fileID: 456296042}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700093326}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0075506866}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.59, y: 0.07}
-    newSize: {x: 0.59, y: 0.07}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.59, y: 0.05489862}
-  m_EdgeRadius: 0
---- !u!212 &1700093330
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3634722495015135013, guid: 4784249003ef3c3438d002d3baa00944,
-    type: 3}
-  m_PrefabInstance: {fileID: 456296042}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700093326}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -562605217060080129, guid: d1e9727f5726b19488bad25290fccc23,
-    type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.59, y: 0.07}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1700296177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,7 +2405,7 @@ SpriteRenderer:
   m_Size: {x: 0.59, y: 0.03}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1832296066
@@ -7695,6 +7541,7 @@ MonoBehaviour:
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
+    serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 0
